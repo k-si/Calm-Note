@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@color/colorGrayLight"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="10dp"
+            android:text="Title"
+            android:textColor="@color/colorText"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="10dp"
+            android:text="subtitle"
+            android:textColor="@color/colorSubText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subtitle"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="10dp"
+            android:text="Time"
+            android:textColor="@color/colorSubText"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
